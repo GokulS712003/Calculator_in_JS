@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<head>
+<style>
+
+div{
+width:20%;
+backgorund-color:blue;
+padding:10px;
+margin:30px;
+border-style:solid;
+border-width:20px;
+border-color:blue;
+}
+
+input:hover
+{
+width:100%;
+padding:12px 20px;
+margin:8px 0;
+background:red;
+}
+ input{
+width:100%;
+padding:12px 20px;
+margin:8px 0;
+box-sizing:border-box;
+}
+
+    
+
+
+</style>
+
+<body>
+    <h1>welcome</h1>
+    <div>
+        <form>
+            <label>Enter A</label>
+            <input type="number" id="t1" size="1" max="10" min="1">
+
+            <label>Enter B</label>
+            <input type="number" id="t2" size="3">
+
+            <label>Enter result</label>
+            <input type="number" id="t3" size="3">
+
+    </div>
+
+    <input type="button" id="b2" size="3" onclick="add()" value="+" class="button1">
+    <input type="button" id="b2" size="3" onclick="sub()" value="-" class="button1">
+    <input type="button" id="b2" size="3" onclick="mul()" value="*" class="button1">
+    <input type="button" id="b2" size="3" onclick="div()" value="/" class="button1">
+    </form>
+
+    <script>
+        function add() {
+            var a = parseInt(document.getElementById('t1').value);
+            var b = parseInt(document.getElementById('t2').value);
+            document.getElementById("t3").value= a+b;
+
+        }
+
+        function sub() {
+            var a = document.getElementById('t1').value;
+            var b = document.getElementById('t2').value;
+            document.getElementById("t3").value = a - b;
+
+        }
+
+        function mul() {
+            var a = document.getElementById('t1').value;
+            var b = document.getElementById('t2').value;
+            document.getElementById("t3").value = a * b;
+
+        }
+
+        function div() {
+            var a = document.getElementById('t1').value;
+            var b = document.getElementById('t2').value;
+            document.getElementById("t3").value = a / b;
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
